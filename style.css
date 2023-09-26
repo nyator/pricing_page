@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+/* .m{
+   height: 100%;
+   overflow: hidden;
+} */
+
+body{
+    font-family: 'Montserrat';
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    font-style: normal;
+    text-align: center;
+    
+}
+
+.upper-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    flex-wrap:  wrap;
+    text-align: center;
+}
+
+
+/* RADIO */
+
+.radio{
+   display: inline-flex;
+   overflow: hidden;
+   border-radius: 2rem;
+   background:  #fafafa; /**/
+}
+
+.radio-input{
+   display: none;
+}
+
+.radio-label{
+   font-size: 1rem;
+   color: rgba(0, 0, 0, 0.30);
+   padding: 0.6rem;
+   width: 7rem;
+   background: #fafafa; /**/
+   cursor: pointer;
+   transition:  0.1s;
+   font-size: 1rem;
+   font-weight: 600;
+   text-align: center;
+   border-radius: 2rem;
+}
+
+.radio-label:not(:last-of-type){
+   border-right: none;
+   background: #fafafa; /**/
+   color: rgba(0, 0, 0, 0.30);
+}
+
+.radio-input:checked + .radio-label{
+   border-radius: 2rem;
+   background: #06F;
+   color: #fff;
+
+}
+
+
+
+ /* PRICE BOX */
+
+ .box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    position: relative;
+
+ }
+
+ .box{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+    width: 19rem;
+    height: 30rem;
+    border-radius: 1rem;
+    opacity: 0.95;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 40, 100, 0.25);
+    margin: 1.2rem;
+    padding: 0 2rem;
+ }
+
+ .price-container{
+   line-height: 5rem; 
+}
+
+ .sub-title{
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+ }
+
+ ul{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-left: 2rem;
+    list-style: disc;
+ }
+
+ li{
+   color: #06F;
+}
+
+li::marker{
+   font-size: 1.2em;
+}
+
+ li span {
+    color: black;
+}
+
+.acc-btn{
+   font-size: 1.125rem;
+   font-weight: 300;
+   text-align: center;
+   justify-content: center;
+   
+   width: 222px;
+   height: 58px;
+   border-radius: 1rem;
+   border: 1px solid rgba(0, 0, 0, 0.05);
+   color: #8F8F8F;
+   background: transparent;
+   cursor: pointer;
+}
+
+.acc-btn:hover{
+   background: #0000000b;
+}
+
+.btn-create:hover{
+   background: rgb(2, 88, 218);
+}
+
+.btn-create{
+   border: 1px solid rgba(0, 0, 0, 0.05);
+   background: #06F;
+   color: #FFF;
+}
+
+.acc-btn-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+
+/* Background */
+
+img{
+   position: sticky;
+   z-index: -1;
+   width: 100%;
+   bottom: 0;
+}
+
